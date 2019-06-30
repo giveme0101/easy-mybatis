@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mapper nameSpace = "cn.tech.dao.UserDao">
+    <select id = "getById" resultType = "cn.tech.entity.User">
+        select
+            sxcode as id, shoudacode as name, isdef as gender
+        from sxrelation sx
+        where
+            sx.shoudacode='CS001'AND SXCODE= ?
+    </select>
+
+    <select id = "findList" resultType = "java.util.ArrayList">
+        select
+            sxcode as id, shoudacode as name, isdef as gender
+        from sxrelation sx
+        where
+            sx.shoudacode='CS001'
+    </select>
+</mapper>

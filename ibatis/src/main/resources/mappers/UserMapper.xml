@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mapper namespace = "cn.kiven.dao.UserMapper">
+
+    <select id = "getById" resultType = "cn.kiven.entity.User">
+        SELECT
+            id as id, name as username
+        FROM
+            user
+        WHERE
+            id = ?
+    </select>
+
+    <select id = "findAllList" resultType = "cn.kiven.entity.User">
+        SELECT
+            id as id, name as username
+        FROM
+            user
+    </select>
+
+</mapper>
