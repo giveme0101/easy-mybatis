@@ -13,32 +13,14 @@
         <module>mvc</module>
         <module>mvc2</module>
         <module>proxy</module>
+        <module>spring-beanpostprocessor</module>
     </modules>
 
-    <profiles>
-        <profile>
-            <id>aliyun_repo</id>
-            <repositories>
-                <repository>
-                    <id>jcenter</id>
-                    <name>阿里云代理的jcenter库</name>
-                    <url>https://maven.aliyun.com/repository/jcenter</url>
-                    <layout>default</layout>
-                </repository>
-                <repository>
-                    <id>spring</id>
-                    <name>阿里云代理的spring库</name>
-                    <url>https://maven.aliyun.com/repository/spring</url>
-                    <layout>default</layout>
-                </repository>
-                <repository>
-                    <id>spring-plugin</id>
-                    <name>阿里云代理的spring-plugin库</name>
-                    <url>https://maven.aliyun.com/repository/spring-plugin</url>
-                    <layout>default</layout>
-                </repository>
-            </repositories>
-        </profile>
-    </profiles>
+    <repositories>
+        <repository>
+            <id>maven-ali</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
 
 </project>
