@@ -25,6 +25,7 @@ public class DefaultFilterChain implements FilterChain{
     public void doFilter(Request request, Response response) {
 
         if (index == filterList.size()){
+            index = 0;
             return;
         }
 
