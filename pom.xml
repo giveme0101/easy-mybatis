@@ -6,6 +6,7 @@
 
     <groupId>cn.kevin</groupId>
     <artifactId>learning</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
@@ -14,6 +15,7 @@
         <module>mvc2</module>
         <module>proxy</module>
         <module>spring-beanpostprocessor</module>
+        <module>design-module</module>
     </modules>
 
     <repositories>
@@ -22,5 +24,18 @@
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
         </repository>
     </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

@@ -14,3 +14,6 @@ url: https://blog.csdn.net/yaluoshan/article/details/80768258
 ### spring-beanpostprocessor
 Spring BeanPostProcessor 接口
 url: https://www.jianshu.com/p/1417eefd2ab1
+
+### design-module 设计模式
+chain   责任链模式
